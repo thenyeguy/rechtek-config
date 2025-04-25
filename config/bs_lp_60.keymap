@@ -8,9 +8,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define BAS_L 0
-#define NAV_L 1
-
 &mt { quick-tap-ms = <150>; };
 
 &lt { quick-tap-ms = <150>; };
@@ -20,14 +17,6 @@
         compatible = "zmk,keymap";
 
         Base {
-            // ------------------------------------------------------------------------------------------
-            // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-            // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-            // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-            // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-            // |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |  MO(1) |  CTL  |
-            // ------------------------------------------------------------------------------------------
-
             label = "Base";
             bindings = <
 &kp GRAVE  &kp N1    &kp N2  &kp N3    &kp N4  &kp N5  &kp N6     &kp N7  &kp N8     &kp N9   &kp N0               &kp MINUS      &kp EQUAL     &kp BSPC
@@ -39,14 +28,6 @@
         };
 
         Function {
-            // ------------------------------------------------------------------------------------------------
-            // | BT CLR | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10  | F11 | F12 |            |
-            // |  BT 1   |   |  UP |   |       |       |       |       |   |     |    |     |     |           |
-            // |   BT 2   | LT |  DN  | RT |       |       |       |       |   |     |   |     |              |
-            // |    BT 3     |     |      |      |     |     |     |     |     |     |     |                  |
-            // |   BT 4  |      |      |                                    | PRT SCR |       |       |  DEL  |
-            // ------------------------------------------------------------------------------------------------
-
             label = "Func";
             bindings = <
 &bootloader  &kp F1      &kp F2            &kp F3      &kp F4    &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp DEL
