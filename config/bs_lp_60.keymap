@@ -8,9 +8,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { quick-tap-ms = <150>; };
+&mt { quick-tap-ms = <250>; };
 
-&lt { quick-tap-ms = <150>; };
+&lt { quick-tap-ms = <250>; };
 
 / {
     keymap {
